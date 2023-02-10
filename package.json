@@ -1,0 +1,19 @@
+{
+  "name": "@kxfm/test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "tests for libraries in KTS (Knowledge Transformation System)",
+  "main": "index.js",
+  "scripts": {
+    "test_23" : "cat data/issues.json | jira-issues2dot | dot2svg"
+    ,
+    "test_3": "node dot2svg_simple-graph.js"
+  },
+  "author": "Boran Gögetap",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@hpcc-js/wasm": "^2.8.0"
+  }
+  ,
+  "comment" : "npm link @kxfm/dot @kxfm/svg @kxfm/dot2svg"
+}
